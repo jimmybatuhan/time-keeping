@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-unused-vars": [
-        "error", // or "error"
+        "error",
         {
           "caughtErrorsIgnorePattern": "^_"
         }
