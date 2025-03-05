@@ -62,7 +62,7 @@ export default function Page() {
 
         try {
             setUser(JSON.parse(_user) as User);
-        } catch (error) {
+        } catch (_error) {
             // details of the user is unparsable, probably this was added manually, if this happens remove and redirect.
             localStorage.removeItem(params.id);
             redirect("/")
